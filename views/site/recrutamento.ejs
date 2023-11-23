@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <%- include("include/head") %>
+    <title>Recrutamento</title>
+</head>
+<body>
+    <%- include("include/header") %>
+    <section>
+        <section class="section-page-title">
+            <div class="container">
+                <h1>Recrutamento</h1>
+            </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="section-title text-center">
+                <h2>Fáça o Seu Recrutamento</h2>
+                <h4>Junte-se a nossa equipa</h4>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-10">
+                        <label for="i2" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="i2" placeholder="Maria">
+                    </div>
+                    <div class="col-md-6 mb-10">
+                        <label for="i3" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="i3" placeholder="Sacuendi">
+                    </div>
+                    <div class="col-md-6 mb-10">
+                        <label for="i4" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="i4" placeholder="999 999 999">
+                    </div>
+                    <div class="col-md-6 mb-10">
+                        <label for="i5" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="i5" placeholder=" maria@gmail.com ">
+                    </div>
+                    <div class="col-md-6 mb-10">
+                        <label for="i5" class="form-label">Selecionar Vaga</label>
+                        <select class="form-control" >
+                            <option value="">Vaga 1</option>
+                            <option value="">Vaga 2</option>
+                        </select>
+                        
+                    </div>
+                    <div class="col-md-6 mb-10">
+                        <label for="i6" class="form-label">CV</label>
+                        <input type="file" class="form-control" id="i6" placeholder="...">
+                    </div>
+                </div>
+                <button class="btn btn-light">Enviar</button>
+            </form>
+          </div>
+        </section>
+      
+
+    </section>
+    <%- include("include/footer") %>
+</body>
+</html>
