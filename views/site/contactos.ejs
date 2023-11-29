@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <%- include("include/head") %>
     <title>Contactos</title>
 </head>
+
 <body>
     <%- include("include/header") %>
     <section>
@@ -17,65 +19,83 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 m-b-20">
-                        <div class="section-title text-start">
-                            <h4>Nossos meios para contacto</h4>
-                        </div>
-                        <nav class="">
+                        <div class="m-b-20">
+                            <h4>Ligue</h4>
                             <a href="tel:+244925438525" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                 title="Telefonar para a empresa"><i class="fa-solid fa-phone"></i> +244 999 999 999 </a>
                             <a href="tel:+244999999999" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                 title="Telefonar para a empresa"><i class="fa-solid fa-phone"></i> +244 999 111 111 </a>
-
+                        </div>
+                        <div class="m-b-20">
+                            <h4>Deixe um email</h4>
                             <a href="mailto:contacto@empresa.com" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                 title="Enviar email para a empresa"> <i class="fa-solid fa-envelope"></i>
-                                contacto@empresa.com </a>
-                            <a href="mailto:geral@empresa.com" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                contacto@villasoft.com </a>
+                            <a href="mailto:geral@villasoft.com" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                 title="Enviar email para a empresa"> <i class="fa-solid fa-envelope"></i>
-                                geral@empresa.com </a>
+                                geral@villasoft.com </a>
+                            <a href="mailto:geral@villasoft.com" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Enviar email para a empresa"> <i class="fa-solid fa-envelope"></i>
+                                recrutamento@villasoft.com </a>
+                        </div>
+                        <div class="m-b-20">
+                            <h4>
+                                Encontre-nos
 
+                            </h4>
                             <a href="https://maps.app.goo.gl/tUuPBS48JMA7De7y9" data-bs-toggle="tooltip"
                                 data-bs-placement="bottom" title="Ver localização no mapa"><i
                                     class="fa-solid fa-location-dot"></i> Luanda - Talatona</a>
-                        </nav>
+                        </div>
+                        <div class="m-b-20">
+                            <h4>Nossas redes sociais</h4>
+                            <nav class="menu-social-links">
+                                <a href="https://wa.me/244925438525" class="icone-whatsapp" data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom" title="Enviar Mensagem no Whatsapp"><i
+                                        class="fa-brands fa-square-whatsapp"></i> Whatsapp</a>
+                                <a href="#" class="icone-linkedin" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    title="Perfil no Linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                                <a href="#" class="icone-youtube" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    title="Canal no Youtube"><i class="fa-brands fa-youtube"></i> Youtube </a>
+                                <a href="#" class="icone-facebook" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    title="Perfil no Facebook"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                            </nav>
+                        </div>
+                        
 
-                        <nav class="menu-social-links">
-                            <a href="https://wa.me/244925438525" class="icone-whatsapp" data-bs-toggle="tooltip"
-                                data-bs-placement="bottom" title="Enviar Mensagem no Whatsapp"><i
-                                    class="fa-brands fa-square-whatsapp"></i> Whatsapp</a>
-                            <a href="#" class="icone-linkedin" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                title="Perfil no Linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-                            <a href="#" class="icone-youtube" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                title="Canal no Youtube"><i class="fa-brands fa-youtube"></i> Youtube </a>
-                            <a href="#" class="icone-facebook" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                title="Perfil no Facebook"><i class="fa-brands fa-facebook"></i> Facebook</a>
-                        </nav>
-                    
+                       
+
                     </div>
                     <div class="col-md-6">
-                        <div class="section-title text-start">
-                            <h4>Deixe uma mensagem</h4>
-                        </div>
-                        <form>
+                        <h4>Deixe uma mensagem</h4>
+                        <form method="post" action="/enviar-mesagem">
                             <div class="row">
                                 <div class="col-12 col-lg-6 mb-10">
                                     <label for="i1" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="i1" placeholder="Bernardo">
+                                    <input type="text" class="form-control" id="i1">
+                                    <br>
                                 </div>
                                 <div class="col-12 col-lg-6 mb-10">
                                     <label for="i2" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="i2" placeholder="bhs@gmail.com">
+                                    <input type="email" class="form-control" id="i2">
+                                    <br>
                                 </div>
                                 <div class="col-12">
                                     <label for="i3" class="form-label">Assunto</label>
-                                    <input type="text" class="form-control" id="i3">
+                                    <input type="text" class="form-control" id="i3" placeholder="">
+                                    <br>
                                 </div>
                                 <div class="col-12">
                                     <label for="i2" class="form-label">Mensagem</label>
                                     <textarea class="form-control" rows="6"></textarea>
+                                    <br>
                                 </div>
                             </div>
-
-                            <button class="btn">Enviar</button>
+                            <div class="row">
+                                <div class="col-12 text-end">
+                                    <button class="btn-border-10">Enviar</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -85,4 +105,5 @@
 
     <%- include("include/footer") %>
 </body>
+
 </html>

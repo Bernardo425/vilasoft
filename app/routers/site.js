@@ -14,10 +14,31 @@ router.get('/sobre', (req, res) => {
 router.get('/contactos', (req, res) => {
     res.render('site/contactos');
 });
+router.post('/enviar-mesagem', (req, res) => {
+    res.render('site/enviar-mensagem');
+});
 router.get('/servicos', (req, res) => {
     res.render('site/servicos');
 });
 router.get('/recrutamento', (req, res) => {
     res.render('site/recrutamento');
+});
+router.get('/candidatura', (req, res) => {
+    res.render('site/candidatura');
+});
+router.post('/candidatar', (req, res) => {
+    res.render('site/registrar-candidatura');
+});
+router.get('/politica-de-privacidade', (req, res) => {
+    res.render('site/politica-privacidade');
+});
+router.get('/termos-de-uso', (req, res) => {
+    res.render('site/termos-de-uso');
+});
+router.get('/utilizacao-de-cookies', (req, res) => {
+    res.render('site/utilizacao-de-cookies');
+});
+router.use((req, res, next) => {
+    res.render('site/404');
 });
 exports.default = router;

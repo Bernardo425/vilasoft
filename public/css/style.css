@@ -40,7 +40,43 @@ p {
     margin-bottom: 20px;
 }
 
+.m-b-40 {
+    margin-bottom: 40px;
+}
 
+.min-height-100{
+    min-height: 100vh;
+}
+
+.btn-border-10{
+    padding: 10px;
+    color: #2b1e59;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid #2b1e59;
+    transition: 0.5s ease-out;
+    background-color: #fff;
+}
+
+.btn-border-20{
+    padding: 20px;
+    color: #2b1e59;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid #2b1e59;
+    transition: 0.5s ease-out;
+}
+
+.btn-border-10:hover, .btn-border-20:hover{
+    
+    color: #ffffff;
+    background-color: #2b1e59;
+}
+
+
+.color-tema{
+    color: #2b1e59;
+}
 
 /* ------------------------------------Header---------------------------- */
 .header-desktop {
@@ -151,7 +187,7 @@ p {
 }
 
 .top-bar-partes-esquerda .menu-contactos-links>a:hover {
-    color: #6500BF;
+    color: #2b1e59;
     text-decoration: underline;
 }
 
@@ -185,12 +221,12 @@ p {
 }
 
 .menu-partes-esquerda.menu-logo a>img {
-    width: 200px;
+    width: 150px;
     transition: 0.2s;
 }
 
 .header-desktop-scrolled .menu-partes-esquerda.menu-logo a>img {
-    width: 170px;
+    width: 140px;
 }
 
 .menu-partes-direita nav {
@@ -223,7 +259,7 @@ p {
     .menu-active {}
 
     .menu-partes-direita .menu-links>a:hover {
-        border-bottom: 1px solid #6500BF !important;
+        border-bottom: 1px solid #2b1e59 !important;
         transition: ease 0.1s;
 
     }
@@ -275,16 +311,16 @@ p {
 .menu-mobile-partes {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 10px 0;
     transition: 0.2s ease-in;
 }
 
 .header-mobile-scrolled .menu-mobile-partes {
-    padding: 15px 0;
+    padding: 5px 0;
 }
 
 .menu-mobile-logo a>img {
-    height: 39px;
+    height: 30px;
     width: auto;
 }
 
@@ -325,7 +361,7 @@ p {
 }
 
 .menu-mobile-content-bottom .menu-contactos-links>a:hover {
-    color: #6500BF;
+    color: #2b1e59;
     text-decoration: underline;
 }
 
@@ -407,7 +443,7 @@ p {
     }
 
     .menu-close:hover {
-        color: #6500BF;
+        color: #2b1e59;
     }
 
     .mobile-menu-body {
@@ -551,17 +587,27 @@ p {
 }
 
 .section-title h4 {
-    color: #6500BF;
+    color: #2b1e59;
 }
 
 .section-title-right {
     text-align: center;
 }
 
+.section-error{
+    min-height: 100vh;
+}
+
+.section-error h1{
+    font-size: 4rem!important;
+}
+
 @media (max-width: 767px) {
     .section-title {
         text-align: center;
     }
+
+   
 }
 
 @media (min-width: 576px) {
@@ -580,12 +626,18 @@ p {
         text-align: right;
     }
 
+    .section-error h1{
+        font-size: 6rem!important;
+    }
+
 }
 
 @media (min-width: 992px) {
     .section {
         margin: 45px 0;
     }
+
+
 
 }
 
@@ -599,154 +651,6 @@ p {
 @media (min-width: 1400px) {}
 
 
-/******************************* CARD *******************/
-.card-1,
-.card-2,
-.card-3 {
-    margin-bottom: 10px;
-}
-
-.card-1 .card .card-icon,
-.card-3 .card .card-icon {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 70px;
-    width: 70px;
-    margin: 0 auto;
-    border: 1px solid;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.card-1 .card .card-icon>i,
-.card-3 .card .card-icon>i {
-    margin: auto;
-}
-
-
-.card-2 .card {
-    border: none;
-}
-
-.card-2 .card-image {
-    margin-bottom: 10px;
-    border-radius: 0.25rem;
-}
-
-.card-2 .card-image-bg {
-    background-color: #e3e3e3;
-}
-
-
-.card-2 .card-body {
-    text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-}
-
-@media (min-width: 576px) {
-
-    .card-1,
-    .card-2,
-    .card-3 {
-        margin-bottom: 15px;
-    }
-}
-
-@media (min-width: 768px) {
-
-    .card-1,
-    .card-2,
-    .card-3 {
-        margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 992px) {}
-
-@media (min-width: 1200px) {}
-
-@media (min-width: 1400px) {}
-
-
-/******************************* LIST *******************/
-
-.list-informative {
-    padding-left: 10px;
-}
-
-.list-informative .list-informative-item {
-    position: relative;
-    padding-left: 15px;
-    margin-top: 20px;
-}
-
-.list-informative .list-informative-item:not(:last-child)::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 3px;
-    width: 1px;
-    height: 100%;
-    border: 2px solid #666;
-}
-
-.list-informative .list-informative-item .list-informative-item-title {
-    font-size: 16px;
-    line-height: 1em;
-    font-weight: 600;
-    color: #1c1c1c;
-    position: relative;
-    margin-bottom: 15px;
-    padding-left: 40px;
-}
-
-.list-informative-item-missao::before {
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448 256A192 192 0 1 0 64 256a192 192 0 1 0 384 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zM224 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>');
-    ;
-    display: block;
-    width: 50px;
-    height: 50px;
-    left: -23px;
-    top: 50%;
-    position: absolute;
-    transform: translateY(-53%);
-    border-radius: 50%;
-}
-
-.list-informative-item-visao::before {
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/></svg>');
-    ;
-    display: block;
-    width: 50px;
-    height: 50px;
-    left: -23px;
-    top: 50%;
-    position: absolute;
-    transform: translateY(-53%);
-    border-radius: 50%;
-}
-
-.list-informative-item-objectivos::before {
-    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z"/></svg>');
-    ;
-    display: block;
-    width: 50px;
-    height: 50px;
-    left: -16px;
-    top: 50%;
-    position: absolute;
-    transform: translateY(-53%);
-    border-radius: 50%;
-}
-
-
-.list-informative .list-informative-item .list-informative-item-content {
-    padding-left: 20px;
-}
-
-
 
 /******************************* Footer *******************/
 .footer {
@@ -755,11 +659,11 @@ p {
 }
 
 .footer-nav{
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .footer-nav:first-child{
-    border-bottom: 1px solid #d1d1d1d1;
+    
 }
 
 .footer nav {
@@ -777,19 +681,20 @@ p {
 }
 
 .footer nav>a:hover {
-    color: #6500BF;
+    color: #2b1e59;
 }
 
 .footer-rodape {
     margin-top: 10px;
-    background-color: #9999;
+    background-color: #2b1e59;
     text-align: center;
 }
 
 .footer-rodape p {
     margin: 0;
-    padding: 20px 0;
-    color: #dddddd;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 12px;
 }
 
 @media (min-width: 768px) {
@@ -828,22 +733,9 @@ p {
 }
 
 .hero-section h1 {
-    text-transform: uppercase;
-    background-image: linear-gradient(-225deg,
-            #dddddd 0%,
-            #1a1a1a 29%,
-            #010101 67%,
-            #000000 100%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 3s linear ;
-    display: inline-block;
+    
+    
+   
     font-size: 2rem;
     margin-top: 100px;
 }
@@ -862,7 +754,7 @@ p {
 
 
 .hero-section-subtitulo h4 {
-    color: #6500BF;
+    color: #2b1e59;
 }
 
 .hero-section img {
@@ -875,18 +767,18 @@ p {
 }
 
 .hero-section a {
-    padding: 10px;
-    color: #6500BF;
+    padding: 20px;
+    color: #2b1e59;
     text-decoration: none;
-    /* border-radius: 50px; */
-    border-bottom: 2px solid #6500BF;
+    border-radius: 50px;
+    border: 2px solid #2b1e59;
     transition: 0.5s ease-out;
 }
 
 .hero-section a:hover {
-    background: #9E72CC;
+    background: #2b1e59;
     color: #fff;
-    border-color: #9E72CC;
+    
 }
 
 .section-sobre .section-sobre-texto {
@@ -896,6 +788,7 @@ p {
 .section-sobre .section-sobre-imagens img {
     width: 100%;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .section-servicos {
@@ -915,10 +808,10 @@ p {
     border: none;
     transition: 0.2s;
     cursor: pointer;
+    box-shadow: 0px 0px 6px 2px #fff5fc;
 }
 
 .section-servicos .card:hover {
-    box-shadow: 0px 0px 6px 2px #faf2f2;
 }
 
 .section-servicos .card img {
@@ -948,16 +841,19 @@ p {
 }
 
 .section-servicos-mais a {
-    padding: 10px 15px;
-    color: #6500BF;
-    text-decoration: underline;
+    padding: 10px;
+    color: #2b1e59;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px solid #2b1e59;
     transition: 0.5s ease-out;
 
 }
 
 .section-servicos-mais a:hover {
 
-    color: #dddddd;
+    color: #fff;
+    background-color: #2b1e59;
 }
 
 
@@ -1002,7 +898,7 @@ p {
     width: 20px;
     height: 20px;
     right: -12px;
-    background-color: #6500BF;
+    background-color: #2b1e59;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -1062,6 +958,29 @@ p {
 }
 
 
+.brand-carousel {
+	
+	margin: 0;
+}
+.owl-dots {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #fff5fc !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.owl-dot.active {
+	background-color: #2b1e59 !important;
+}
+
 @media screen and (max-width: 600px) {
 
     
@@ -1106,7 +1025,7 @@ p {
 @media (min-width: 768px) {
 
     .hero-section h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .section-servicos-mais-imagem {
@@ -1120,7 +1039,7 @@ p {
 
 
     .hero-section {
-        margin-top: 0;
+        margin-top: 80px;
     }
 
     .section-servicos span {
@@ -1132,7 +1051,6 @@ p {
 
     .hero-section h1 {
         margin-top: 0px;
-        font-size: 3rem;
     }
 
     .hero-section-subtitulo {
@@ -1156,39 +1074,51 @@ p {
     background-attachment: fixed;
 }
 
-.section-contacto nav>a {
+.section-contacto a {
     display: block;
     width: 100%;
-    color: #212529;
+    color: #2b1e59;
     text-decoration: none;
     padding: 10px 0;
     transition: .2s;
     
 }
 
-.section-contacto nav>a:hover {
-    
-    color: #6500BF;
+.section-contacto a:hover {
+    color: #70808a;
     text-decoration: underline;
-    
 }
 
+.section-contacto .menu-social-links > a {
+    display: inline;
+    margin-right: 10px;
+    padding: 5px 0;
+    margin-bottom: 6px;
+}
+
+
+.form-control{
+    border: 2px solid #ced4da;
+}
 
 .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #6500BF;
-    
+    border: 2px solid #2b1e59;
     box-shadow: none;
   }
 
 
-.section-contacto button {
-    margin-top: 10px;
-    float: right;
-    background-color: #fff;
+
+
+/******************************* Página do recrutamento *******************/
+.section-recrutamento .table thead, .section-recrutamento thead th{
     border: none;
-    color: #6500BF;
-    text-decoration: underline;
 }
 
+.section-recrutamento .table thead tr{
+    border-bottom: 1px solid #ddd;
+}
+.section-recrutamento .table td{
+    padding: 40px 0;
+}

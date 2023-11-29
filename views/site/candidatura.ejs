@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <%- include("include/head") %>
+    <title>Cadidatura - Vaga x</title>
+</head>
+
+<body>
+    <%- include("include/header") %>
+    <section>
+        <section class="section-page-title">
+            <div class="container">
+                <h1>Candidatura</h1>
+            </div>
+        </section>
+        <section class="section section-candidatura">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Titulo da vaga</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero aperiam, asperiores quibusdam pariatur deleniti excepturi sequi ea enim quasi sapiente voluptates suscipit temporibus iure libero totam repudiandae odit nam ratione?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium perspiciatis illum aliquid vero maiores! Quasi, debitis ipsam voluptatem sapiente natus laudantium consequuntur explicabo vero sint maxime odio dolorem corporis ea.</p>
+                        
+                      
+                        <h3>Funções</h3>
+                        <ul>
+                          <li> função1 </li>
+                          <li> função2 </li>
+                          <li> função3 </li>
+                          <li> função4 </li>
+                          <li> função5 </li>
+                        </ul>  
+                        <h3>Requisitos</h3>
+                        <ul>
+                          <li> Requisito 1 </li>
+                          <li> Requisito 2 </li>
+                          <li> Requisito 3 </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <form method="post" action="/candidatar" enctype="multipart/form-data">
+                            <label for="primeiro-nome" class="form-label">Primeiro nome</label>
+                            <input type="text" class="form-control" id="primeiro-nome" placeholder="Ex: Bernardo">
+                            <br>
+                            <label for="ultimo-nome" class="form-label">Último nome</label>
+                            <input type="text" class="form-control" id="ultimo-nome" placeholder="Ex: Sacuendi">
+                            <br>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ex: bernardosacuendi@gmail.com">
+                            <br>
+                            <label for="telefone" class="form-label">Número de telefone </label>
+                            <input type="text" class="form-control" id="telefone" placeholder="Ex: 925438525">
+                            <br>
+                            <label for="cv" class="form-label">CV </label>
+                            <input type="file" class="form-control" id="cv">
+                            <br>
+                            <label for="sobre" class="form-label">Escreva sobre você </label>
+                            <textarea id="sobre" class="form-control m-b-20" rows="6" placeholder="Estou procurando por novos desfios para aumentar o meu conhecimento e de alguma forma contribuir para o desenvolvimento da empresa"></textarea>
+                            <div class="row">
+                                <div class="col-12 text-end">
+                                    <button class="btn btn-border-10">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+             
+            </div>
+        </section>
+
+        <section class="section section-candidatura-formulario">
+            <div class="container">
+                
+            </div>
+        </section>
+
+    </section>
+    <%- include("include/footer") %>
+</body>
+
+</html>
