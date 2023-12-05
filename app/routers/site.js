@@ -8,11 +8,23 @@ const router = express_1.default.Router();
 router.get('/', (req, res) => {
     res.render('site/index');
 });
+router.get('/index2', (req, res) => {
+    res.render('site/index2');
+});
+router.get('/index3', (req, res) => {
+    res.render('site/index3');
+});
+router.get('/index2', (req, res) => {
+    res.render('site/index2');
+});
 router.get('/sobre', (req, res) => {
     res.render('site/sobre');
 });
 router.get('/contactos', (req, res) => {
     res.render('site/contactos');
+});
+router.get('/contactos2', (req, res) => {
+    res.render('site/contactos2');
 });
 router.post('/enviar-mesagem', (req, res) => {
     res.render('site/enviar-mensagem');
@@ -22,6 +34,9 @@ router.get('/servicos', (req, res) => {
 });
 router.get('/recrutamento', (req, res) => {
     res.render('site/recrutamento');
+});
+router.get('/recrutamento2', (req, res) => {
+    res.render('site/recrutamento2');
 });
 router.get('/candidatura', (req, res) => {
     res.render('site/candidatura');

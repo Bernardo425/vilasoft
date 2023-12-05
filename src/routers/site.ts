@@ -6,6 +6,15 @@ const router: Router = express.Router();
 router.get('/', (req: Request, res: Response)=>{
     res.render('site/index');
 });
+router.get('/index2', (req: Request, res: Response)=>{
+    res.render('site/index2');
+});
+router.get('/index3', (req: Request, res: Response)=>{
+    res.render('site/index3');
+});
+router.get('/index2', (req: Request, res: Response)=>{
+    res.render('site/index2');
+});
 
 router.get('/sobre', (req: Request, res: Response)=>{
     res.render('site/sobre');
@@ -13,6 +22,9 @@ router.get('/sobre', (req: Request, res: Response)=>{
 
 router.get('/contactos', (req: Request, res: Response)=>{
     res.render('site/contactos');
+});
+router.get('/contactos2', (req: Request, res: Response)=>{
+    res.render('site/contactos2');
 });
 router.post('/enviar-mesagem', (req: Request, res: Response)=>{
     res.render('site/enviar-mensagem');
@@ -24,6 +36,9 @@ router.get('/servicos', (req: Request, res: Response)=>{
 
 router.get('/recrutamento', (req: Request, res: Response)=>{
     res.render('site/recrutamento');
+});
+router.get('/recrutamento2', (req: Request, res: Response)=>{
+    res.render('site/recrutamento2');
 });
 router.get('/candidatura', (req: Request, res: Response)=>{
     res.render('site/candidatura');

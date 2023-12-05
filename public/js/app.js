@@ -31,7 +31,6 @@ document.querySelector("#menu-overlay").addEventListener("click", menuToggle);
 
 menuMobileBottom.insertAdjacentHTML("afterbegin", socialLinks.innerHTML);
 menuMobileBottom.insertAdjacentHTML("afterbegin", contactosLinks.innerHTML);
-footerContactos.insertAdjacentHTML("afterbegin", contactosLinks.innerHTML);
 
 function menuToggle() {
     menuDiv.classList.toggle("active");
@@ -62,11 +61,11 @@ function transformarMenu() {
     
   }
 
-  if (window.scrollY >= heroSection.clientHeight) {
+  if (window.scrollY >= 500) {
     topBar.classList.add("top-bar-hide");
   }else{
     topBar.classList.remove("top-bar-hide");
-      if (window.scrollY > (heroSection.clientHeight / 2)) {
+      if (window.scrollY > (500 / 2)) {
         headerDesktop.classList.add("header-desktop-scrolled");
       } else {
         headerDesktop.classList.remove("header-desktop-scrolled");
