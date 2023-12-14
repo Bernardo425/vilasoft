@@ -17,6 +17,12 @@ router.get('/index3', (req, res) => {
 router.get('/index2', (req, res) => {
     res.render('site/index2');
 });
+router.get('/index4', (req, res) => {
+    res.render('site/index4');
+});
+router.get('/index5', (req, res) => {
+    res.render('site/index5');
+});
 router.get('/sobre', (req, res) => {
     res.render('site/sobre');
 });

@@ -220,7 +220,7 @@ p {
     gap: 10px;
 }
 
-.menu-partes-esquerda.menu-logo a>img, .menu-partes-esquerda.menu-logo a>svg {
+.menu-partes-esquerda.menu-logo a>img {
     width: 150px;
     transition: 0.2s;
 }

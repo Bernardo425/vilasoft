@@ -769,7 +769,7 @@ p {
 
 
 .hero-section-bg svg{
-    width: 350px;
+    opacity: 0.05;
 }
 
 .hero-section {

@@ -95,6 +95,7 @@ p {
     background-color: #fff;
     z-index: 99;
     transition: 0.2s;
+    background-color: transparent;
 }
 
 @keyframes showHeader {
@@ -111,6 +112,7 @@ p {
     position: fixed;
     animation-name: showHeader;
     animation-duration: 0.5s;
+    background-color: #fff;
 }
 
 .header-mobile {
@@ -232,6 +234,27 @@ p {
     transition: 0.2s;
 }
 
+.menu-partes-esquerda.menu-logo a>svg {
+    width: 150px;
+    transition: 0.2s;
+}
+
+.menu-partes-esquerda.menu-logo .link-img{
+    display: none;
+}
+
+.menu-partes-esquerda.menu-logo .link-svg{
+    display: block;
+}
+
+.header-desktop-scrolled .link-img {
+    display: block!important;
+}
+
+.header-desktop-scrolled .link-svg {
+    display: none!important;
+}
+
 .header-desktop-scrolled .menu-partes-esquerda.menu-logo a>img {
     width: 140px;
 }
@@ -242,8 +265,12 @@ p {
 
 .menu-partes-direita .menu-links>a {
     padding: 5px;
-    color: #1a1a1a;
+    color: #ffffff;
     transition: ease 0.1s;
+}
+
+.header-desktop-scrolled .menu-partes-direita .menu-links>a {
+    color: #1a1a1a;
 }
 
 .menu-active {
@@ -590,7 +617,7 @@ p {
 }
 
 .section-title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .section-title h4 {
@@ -661,8 +688,9 @@ p {
 
 /******************************* Footer *******************/
 .footer {
-    
     background-color: #ddd;
+    position: relative;
+    z-index: 9;
 }
 
 .footer-nav{
@@ -735,19 +763,23 @@ p {
     height: 100vh;
     position: absolute;
     float: left;
+    display: flex;
 }
 
+
+
 .hero-section-bg svg{
+    opacity: 0.06;
+    position: absolute;
     width: 100%;
-    height: 100vh;
 }
 
 .hero-section {
     min-height: 100vh;
     background-position: center;
     background-size: cover;
-    margin-top: 75px;
-    margin-bottom: 100px;
+    background-color: #2b1e59;
+    color: #ffffff;
 }
 .hero-section h1 {
     
@@ -785,16 +817,17 @@ p {
 
 .hero-section a {
     padding: 20px;
-    color: #2b1e59;
+    color: #fff;
     text-decoration: none;
     border-radius: 50px;
-    border: 2px solid #2b1e59;
+    border: 2px solid #fff;
     transition: 0.5s ease-out;
+    background-color: #2b1e59;
 }
 
 .hero-section a:hover {
-    background: #2b1e59;
-    color: #fff;
+    background: #fff;
+    color: #2b1e59;
     
 }
 
@@ -806,10 +839,9 @@ p {
 
 .section-sobre .section-sobre-texto {
     text-align: left;
-    box-shadow: 0px 0px 80px rgba(43, 30, 89, 0.07), 0px 0px 33.4221px rgba(43, 30, 89, 0.0503198), 0px 0px 17.869px rgba(43, 30, 89, 0.0417275), 0px 0px 10.0172px rgba(43, 30, 89, 0.035), 0px 0px 5.32008px rgba(43, 30, 89, 0.0282725), 0px 0px 2.21381px rgba(43, 30, 89, 0.0196802);
-    background: #fff;
+    background: rgba(255,255,255, 0.7);
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 20px 10px;
 }
 
 .section-sobre-texto h2{
@@ -833,9 +865,9 @@ p {
 }
 
 .section-perguntas-bg svg{
-    width: 70%;
+    width: 50%;
     position: relative;
-    left: -50px;
+    
 }
 
 .section-perguntas-card{
@@ -892,24 +924,56 @@ p {
 .section-servicos .card {
     border: none;
     transition: 0.2s;
-    cursor: pointer;
-    border-radius: 10px;
+    border-radius: 1rem;
     box-shadow: 0px 0px 80px rgba(43, 30, 89, 0.07), 0px 0px 33.4221px rgba(43, 30, 89, 0.0503198), 0px 0px 17.869px rgba(43, 30, 89, 0.0417275), 0px 0px 10.0172px rgba(43, 30, 89, 0.035), 0px 0px 5.32008px rgba(43, 30, 89, 0.0282725), 0px 0px 2.21381px rgba(43, 30, 89, 0.0196802);
 }
 
 .section-servicos .card:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.section-servicos a{
+
+    text-decoration: none;
+}
+
+.section-servicos .card-title{
+    color: #0d0d0d;
 }
 
 .section-servicos .card-body{
-    padding: 20px;
+    padding: 20px 30px;
 }
 .section-servicos .card svg, .section-servicos .card img{
     width: 50px;
     margin-bottom: 20px;
 }
 
+.section-servicos .card-icon::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #2b1e5980;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    top: 55px;
+    left: 50px;
+}
+
+.section-servicos .card-icon-desenvolvimento::before{
+    left: 60px;
+}
+.section-servicos .card-icon-formacao::before{
+    left: 30px;
+}
+.section-servicos .card-icon-consultoria::before{
+    left: 50px;
+}
+
 .section-servicos .card h5 {
-    font-weight: 600;
     margin-bottom: 20px;
 }
 
@@ -1016,7 +1080,7 @@ p {
     padding: 20px 30px;
     background-color: white;
     position: relative;
-    border-radius: 6px;
+    border-radius: 1rem;
     box-shadow: 0px 0px 80px rgba(43, 30, 89, 0.07), 0px 0px 33.4221px rgba(43, 30, 89, 0.0503198), 0px 0px 17.869px rgba(43, 30, 89, 0.0417275), 0px 0px 10.0172px rgba(43, 30, 89, 0.035), 0px 0px 5.32008px rgba(43, 30, 89, 0.0282725), 0px 0px 2.21381px rgba(43, 30, 89, 0.0196802);
     
 }
@@ -1038,7 +1102,7 @@ p {
 
 .brand-carousel img{
     width: 100px;
-
+    opacity: 0.4;
 }
 
 .brand-carousel .box{
@@ -1118,8 +1182,7 @@ p {
     }
 
     .section-sobre .section-sobre-texto {
-        
-        text-align: right !important;
+        text-align: justify !important;
     }
 
 
@@ -1193,7 +1256,7 @@ p {
     border: none;
     transition: 0.2s;
     cursor: pointer;
-    border-radius: 1rem;
+    border-radius: 10px;
     box-shadow: 0px 0px 80px rgba(43, 30, 89, 0.07), 0px 0px 33.4221px rgba(43, 30, 89, 0.0503198), 0px 0px 17.869px rgba(43, 30, 89, 0.0417275), 0px 0px 10.0172px rgba(43, 30, 89, 0.035), 0px 0px 5.32008px rgba(43, 30, 89, 0.0282725), 0px 0px 2.21381px rgba(43, 30, 89, 0.0196802);
   }
 

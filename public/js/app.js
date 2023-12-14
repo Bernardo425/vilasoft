@@ -48,23 +48,23 @@ window.onscroll = function() { transformarMenu() };
 var headerMobile = document.getElementById("header-mobile");
 var headerDesktop = document.getElementById("header-desktop");
 const heroSection = document.querySelector(".hero-section");
+const backTop = document.querySelector(".back-top");
 const topBar = document.getElementById("top-bar");
 
 function transformarMenu() {
     
   if (window.scrollY > 50) {
     headerMobile.classList.add("header-mobile-scrolled");
-    
-
   } else {
     headerMobile.classList.remove("header-mobile-scrolled");
-    
   }
 
   if (window.scrollY >= 500) {
     topBar.classList.add("top-bar-hide");
+    backTop.classList.add("back-top-show");
   }else{
     topBar.classList.remove("top-bar-hide");
+    backTop.classList.remove("back-top-show");
       if (window.scrollY > (500 / 2)) {
         headerDesktop.classList.add("header-desktop-scrolled");
       } else {
